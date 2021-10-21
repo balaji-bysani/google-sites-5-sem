@@ -1,0 +1,53 @@
+*{
+    margin:0;
+    padding: 0;
+    background: whitesmoke;
+}
+#heading{
+    font-size: 54px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    text-align: center;
+    padding: 10px;
+}
+.body_links{
+    padding:8px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap:20px;
+}
+.card img{
+    width: 100%;
+    height: 220px;
+}
+.card{
+    margin:20px;
+    padding:10px;
+    border: 1px solid grey;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 5px;
+}
+.card a,h2{
+    text-decoration: none;
+    color:black;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 20px;
+}
+.body_links a{
+    text-decoration: none;
+}
+@media only screen and (max-width: 960px){
+    .body_links{
+        display: flex;
+        flex-direction: column;
+    }
+    .card a,h2{
+        font-size: 18px;
+    }
+    .card img{
+        height:200px;
+    }
+}
